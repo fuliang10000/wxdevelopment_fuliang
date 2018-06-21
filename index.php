@@ -377,7 +377,7 @@ class SHA1
 }
 $obj = new SHA1();
 $result = $obj->createAccessToken();
-var_dump($obj->createMenu($result['access_token']));die;
+var_dump($result['access_token']);die;
 $postStr = file_get_contents('php://input');
 $data = $obj->analysisXmlData($postStr);
 // 保存微信用户的位置信息
